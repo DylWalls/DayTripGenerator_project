@@ -1,3 +1,5 @@
+do {
+
 function randomLocation(array){
   let num = Math.floor(Math.random() * array.length)
   return array[num]
@@ -17,8 +19,8 @@ function randomBistro(array){
   function randomEntertain(array){
     let num = (Math.floor(Math.random() * 5))
      return array[num]
+ 
   }
-  
   let placeToSee = ['Rio', 'Brazil', 'Hungary', 'Poland', 'Turkey']
   let randomPlace = randomLocation(placeToSee);
   
@@ -30,5 +32,10 @@ function randomBistro(array){
   
   let wayToEntertain = ['tv','phone', 'xbox', 'playstation', 'laptop'];
   let entertainment = randomEntertain(wayToEntertain);
+  
 
-console.log("Your random destination is " + randomPlace + ". What you are going to have for dinner is " + randomFood + ", while riding a "+randomTransp + " also watching your "+entertainment + ".");
+  
+
+alert("Your random destination is " + randomPlace + ". What you are going to have for dinner is " + randomFood + ", while riding a "+randomTransp + " also watching a movie on your "+entertainment + ".");
+ userinput = prompt("Do you like the selection? Y/N");
+} while (userinput == Y);
