@@ -1,4 +1,3 @@
-
 let Yes = ("Y");
 let randomPlace;
 let randomFood;
@@ -24,8 +23,6 @@ function randomArrayitem(array){
   
   let wayToEntertain = ['tv','phone', 'xbox', 'playstation', 'laptop'];
    entertainment = randomArrayitem(wayToEntertain);
-  
-  
   
 
 alert("Your random destination is " + randomPlace + ". What you are going to have for dinner is " + randomFood + ", while riding a "+randomTransp + " also watching a movie on your "+ entertainment + ".");
